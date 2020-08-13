@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Log App</title>
+</head>
+<body>
+
+<h1>Calculate</h1>
+<br>
+
+<h2>Input:</h2>
+<div id = "input-container">0</div>
+<br>
+<br>
+<button onclick = "getInput('7');">7</button>
+<button onclick = "getInput('8');">8</button>
+<button onclick = "getInput('9');">9</button>
+<br>
+<button onclick = "getInput('4');">4</button>
+<button onclick = "getInput('5');">5</button>
+<button onclick = "getInput('6');">6</button>
+<br>
+<button onclick = "getInput('1');">1</button>
+<button onclick = "getInput('2');">2</button>
+<button onclick = "getInput('3');">3</button>
+<br>
+<button onclick = "getInput('0');">0</button>
+<button onclick = "clearInput();">C</button>
+
+<form action="/api/calculations" method="post" id="form">
+<button type ="submit" name="temperature" value="temperature" onclick = "return getCelsius();">=</button>
+</form>
+
+<br>
+<br>
+<h2>Output:</h2>
+<div id = "output-container"></div>
+
+<script src="script.js" async></script>
+</body>
